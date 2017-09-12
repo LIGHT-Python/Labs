@@ -10,7 +10,7 @@ class TestWeek1(unittest.TestCase):
         self.assertRaises(TypeError, week1.add, 2, '2')
 
     def test_sub_works(self):
-        self.assertEquals(4, week1.sub(8, 5))
+        self.assertEquals(3, week1.sub(8, 5))
 
     def test_mul_works(self):
         self.assertEquals(20, week1.mul(4, 5))
