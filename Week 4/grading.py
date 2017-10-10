@@ -1,19 +1,8 @@
 #!/usr/bin/env python
 
-# This script calculates an average from a list of numbers in the
-# range of 0-100.
-#
-# Remember that an average is the sum of whole list divided
-# by the number of entries in the list.
-#
-# For letter grades:
-#    Scores between 90 and 100 = A
-#    Scores between 80 and 89  = B
-#    Scores between 70 and 79  = C
-#    Scores between 60 and 69  = D
-#             Scores under 60  = F
-
 def assign_grades(scores):
+    """Given a dict of names and a list of test scores, assign each student a
+    letter grade and return it as a dict."""
 
     grades = {}
 
@@ -24,22 +13,18 @@ def assign_grades(scores):
     return grades
 
 def letter_grade(average):
+    """Scores between 90 and 100 = A
+       Scores between 80 and 89  = B
+       Scores between 70 and 79  = C
+       Scores between 60 and 69  = D
+                Scores under 60  = F
+    """
 
-    if average >= 90:
-        return 'A'
-    elif average >= 80 and average < 90:
-        return 'B'
-    elif average >= 70 and average < 80:
-        return 'C'
-    elif average >= 60 and average < 70:
-        return 'D'
-    else:
-        return 'F'
+    pass
 
 def calculate_average(grades):
-    entries = len(grades)
-    total = 0
-    for n in grades:
-        total = total + n
+    """This function calculates an average from a list of numbers in the range
+    of 0-100.  Remember that an average is the sum of whole list divided by the
+    number of entries in the list."""
 
-    return total/entries
+    pass
